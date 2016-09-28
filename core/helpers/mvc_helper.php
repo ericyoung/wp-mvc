@@ -217,7 +217,7 @@ class MvcHelper {
         }
         
         if($options['actions']['view']){
-            $links[] = '<a href="'.MvcRouter::public_url(array('object' => $object)).'" title="View '.$encoded_object_name.'">View</a>';
+            $links[] = '<a href="'.MvcRouter::admin_url(array('object' => $object, 'action' => 'show')).'" title="View '.$encoded_object_name.'">View</a>';
         }
         
         if($options['actions']['delete']){
